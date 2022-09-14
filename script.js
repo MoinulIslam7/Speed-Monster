@@ -113,6 +113,7 @@ const start = () => {
     // finished timer
     if (count == 0) {
       // -------------- START TYPING -----------------
+      countdownOverlay.innerHTML = "";
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
       countdownOverlay.classList.remove("inactive");
