@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="text-bg-dark">
+  <section class="container mt-2">
+    <div class="border border-1 p-3">
+      <h2 class="text-center">Local Storage vs Session Storage</h2>
+      <hr>
+      <p>localStorage and sessionStorage are almost identical and have the same API. The difference is that with
+        sessionStorage, the data is persisted only until the window or tab is closed. With localStorage, the data is
+        persisted until the user manually clears the browser cache or until your web app clears the data. </p>
+      <h4>Local Storage: </h4>
+      <p>Local storage persists the storage across browser sessions. So even if the domain is opened in a new tab, or
+        the browser is closed and reopened, the storage is saved. There is no expiration.</p>
+      <h4>Session Storage: </h4>
+      <p>Session Storage is cleared when the page session ends. A page session lasts as long as the tab or the browser
+        is open. Therefore, when you open a new tab or a new window, this creates a new session and new storage.</p>
+    </div>
+    <br>
+    <div class="border border-1 p-3">
+      <h2 class="text-center">Global Scope vs Block Scope</h2>
+      <hr>
+      <p>In a browser environment, the global scope is controlled by the window object while in Node. js, it's
+        controlled by the global object. Block scopes are what you get when you use if statements, for statements, and
+        the like.</p>
+      <h4>Global Scope: </h4>
+      <p> Global scope is the context where everything in a Javascript program executes by default. This scope includes
+        all variables, objects, and references that are not contained within a customized scope defined by a programmer.
+        Global scope is the entire Javascript execution environment.</p>
+      <h4>Block Scope: </h4>
+      <p> A block scoped variable means that the variable defined within a block will not be accessible from outside the
+        block. A block can reside inside a function, and a block scoped variable will not be available outside the block
+        even if the block is inside a function.</p>
+    </div>
+    <br>
+    
+
+    <div class="border border-1 p-3 mt-4">
+      <h1 class="text-center ">How Javascript Event loop works?</h1>
+      <hr>
+      <p>JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting
+        and processing events, and executing queued sub-tasks. This model is quite different from models in other
+        languages like C and Java.<br>When the Web API finishes executing the task, it doesn’t just push it back to the
+        Call Stack automatically. It goes to the Task Queue. A queue is a data structure that works on the First in
+        First out principle, so as tasks get pushed into the
+        queue, they get out in that same order. Tasks that have been executed by the Web API’s, which are being pushed
+        to the Task Queue, then go back to the Call Stack to get their result printed out.
+        <br>
+        The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task
+        Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for
+        available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear
+        again, and repeats the same process.
+
+
+      </p>
+    </div>
+    <br>
+    <div class="border border-1 p-3">
+      <h2 class="text-center">Explain undefined in JavaScript?</h2>
+      <hr>
+      <p>A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.</p>
+      <h4>Following are the Undefined in JavaScript: </h4>
+      <ul>
+        <li>variable that is not initialized will give undefined.</li>
+        <li>function with no return.</li>
+        <li>parameter that is not passed will be undefined.</li>
+        <li>if return has nothing no the right side will return undefined.</li>
+        <li>property doesn't exists on an objectwill give you undefined.</li>
+        <li>accessing array elements outside of the index range undefined.</li>
+        <li>deleting an element inside an array undefined.</li>
+        <li>sat a value directly to undefined.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
